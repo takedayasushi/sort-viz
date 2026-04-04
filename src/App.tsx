@@ -239,15 +239,16 @@ export function App() {
           font-family: "JetBrains Mono", monospace; font-size: 0.8rem; color: var(--muted);
         }
         .bars {
-          flex: 1; display: flex; align-items: flex-end; justify-content: center;
+          flex: 1; display: flex; align-items: stretch; justify-content: center;
           gap: clamp(4px, 1.2vw, 10px); min-height: 220px; padding: 8px 4px 0;
         }
         .bar-col {
           flex: 1; max-width: 36px; display: flex; flex-direction: column;
           align-items: center; justify-content: flex-end; min-width: 0;
+          min-height: 0;
         }
         .bar {
-          width: 100%; border-radius: 10px 10px 4px 4px;
+          width: 100%; flex-shrink: 0; min-height: 4px; border-radius: 10px 10px 4px 4px;
           background: linear-gradient(180deg, #9cb4ff 0%, #5b7cff 45%, #3d5bdc 100%);
           box-shadow: 0 0 24px rgba(91, 124, 255, 0.25);
           transition: height 0.38s cubic-bezier(0.34, 1.2, 0.64, 1),
