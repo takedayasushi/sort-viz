@@ -1,0 +1,49 @@
+:root {
+  color-scheme: dark;
+  --bg0: #0c0e14;
+  --bg1: #12161f;
+  --surface: rgba(255, 255, 255, 0.06);
+  --surface2: rgba(255, 255, 255, 0.1);
+  --border: rgba(255, 255, 255, 0.12);
+  --text: #e8eaef;
+  --muted: #8b92a8;
+  --accent: #7c9cff;
+  --accent2: #a78bfa;
+  --compare: #fbbf24;
+  --swap: #f472b6;
+  --sorted: #34d399;
+  --pivot: #38bdf8;
+  --radius: 16px;
+  --shadow: 0 24px 80px rgba(0, 0, 0, 0.45);
+  font-family: "DM Sans", system-ui, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--text);
+  background: var(--bg0);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(1200px 600px at 20% -10%, #1a2240 0%, transparent 55%),
+    radial-gradient(900px 500px at 100% 20%, #2a1a38 0%, transparent 50%), var(--bg0);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+}
+
+input[type="range"] {
+  accent-color: var(--accent);
+}
